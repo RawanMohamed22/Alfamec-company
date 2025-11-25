@@ -1,0 +1,202 @@
+import type { ICards, ISolutions } from "../interfaces";
+
+export const Strenghts: ICards[] = [
+  {
+    img: "expertise",
+    title: "Experience and Expertise",
+    description:"ALFAMEC has been catering to clients in various verticals since its establishment in 2014.",
+    alt : "experience"
+  },
+  {
+    img: "qualified",
+    title: "Highly Qualified In-House Team",
+    description:" We have a team of highly qualified, skilled, experienced and dedicated engineers.",
+    alt : "qualified"
+  },
+  {
+    img: "reliable",
+    title: "Reliable, On-Time Service Delivery",
+    description:" We take pride in our reputation of delivering quality and prompt services to our clients.",
+    alt : "reliable"
+  },
+  {
+    img: "support",
+    title: "Dependable Support",
+    description:"Our commitment to prompt and dependable support is endorsed by our valued customers.",
+    alt : "support"
+  },
+];
+
+export const Products : ICards[] = [
+  {
+    img : "first-service",
+    title : "Automation, Control & Power Panels" ,
+    description : " We deliver end-to-end customized automation solutions, integrating state- of-the-art PLCs and HMI/SCADA systems.",
+    alt : "Automation,Control & Power Panels"
+  },
+  {
+    img : "service two",
+    title : "Reactors" ,
+    description : " We fabricate industrial reactors for thermal and pressure demands agitation and material feed.",
+    alt : "Reactors"
+  },
+  {
+    img : "prooooduct",
+    title : " Piping" ,
+    description : "We design and manufacture Stainless steel piping for liquids and steel piping for heating systems (oil and steam).",
+    alt : "Piping"
+  },
+  {
+    img : "service four",
+    title : "Fire Fighting Systems" ,
+    description : " We design, manufacture, install and commission complete fire fighting systems according to your requirements",
+    alt : "Fire Fighting Systems"
+  }
+]
+
+export const Solutions : ISolutions[] = [
+  {
+    img : "solution-1" ,
+    paragraph : "Design & preparation of layouts for Cooling Towers"
+  },
+  {
+    img : "solution-2" ,
+    paragraph : "Detailed design and drawing of fire-fighting and fire suppression systems for any kind of infrastructure"
+  },
+  {
+    img : "solution-3" ,
+    paragraph : "Electrical designs for plants and utilities, including medium & low voltage electrical distribution systems"
+  },
+  {
+    img : "solution-4" ,
+    paragraph : "Co-ordinate with detailed layout drawings for system, power, control and wiring schematics"
+  }
+
+]
+
+export const Service : ICards[] = [
+  {
+    img : "product1" ,
+    title : "Machine Upgrade" ,
+    description : " Extends the lifecycle of your existing assets. We enhance performance, integrate modern controls, and bring older machinery up to current operational standards efficiently.",
+    alt : "Machine Upgrade"
+  },
+  {
+    img : "product2" ,
+    title : "fire alarm systems" ,
+    description : " Advanced detection and immediate warning systems. Ensures rapid response to thermal or smoke events, minimizing damage and guaranteeing business continuity.",
+    alt : "fire alarm systems"
+  },
+  {
+    img : "product3" ,
+    title : "Automation" ,
+    description : " Implementing intelligent PLC and SCADA systems. We enhance efficiency, reduce manual error, and provide remote monitoring for total plant optimization.",
+    alt : "Automation"
+  },
+  {
+    img : "product4" ,
+    title : "Control & Power Panels" ,
+    description : "The operational center of your plant. We design and build robust panels for centralized power distribution, motor control, and reliable system monitoring",
+    alt : "Control & Power Panels"
+  },
+  {
+    img : "product7" ,
+    title : "Electrical Works" ,
+    description : "Full-scale, professional electrical infrastructure installation. Ensures system reliability, minimizes downtime, and complies strictly with all safety codes.",
+    alt : "Electrical Works"
+  },
+  {
+    img : "eight" ,
+    title : "Homogenizers" ,
+    description : "High-shear, high-pressure equipment for emulsion and dispersion. Delivers superior product texture, stability, and particle size control across sensitive formulations.",
+    alt :"Homogenizers"
+  },
+  {
+    img: "customized",
+    title : "Customized Solutions",
+    description: "Engineering expertise focused on unique challenges. We design bespoke systems that perfectly bridge gaps where standard equipment fails to meet specific process needs.",
+    alt: "Customized Solutions"
+  }
+]
+
+export const ProductsPage : ICards[] = [
+   {
+    img : "one" ,
+    title : "Tanks" ,
+    description : "High-quality stainless steel fabrication for storage and process vessels. Ensures secure, compliant, and durable containment solutions tailored to volume and temperature needs.",
+    alt :"Tanks"
+  },
+   {
+    img : "five" ,
+    title : "Mixers" ,
+    description : "Ensures homogeneous blending across all viscosities. Our high precision industrial mixers deliver repeatable product quality and process efficiency consistently.",
+    alt :"Mixers"
+  },
+   {
+    img : "two" ,
+    title : "Reactors" ,
+    description : " Core to process safety and yield. We design and manufacture custom industrial reactors optimized for chemical and thermal efficiency across all key industry requirements. ",
+    alt :"Reactors"
+  },
+   {
+    img : "four" ,
+    title : "Heat Exchangers" ,
+    description : " Optimized thermal management systems for heating and cooling cycles. Increases system efficiency, minimizes energy use, and maintains critical process temperatures.",
+    alt :"Heat Exchangers"
+  },
+   {
+    img : "service three" ,
+    title : "Stainless Steel Piping" ,
+    description : "Seamless integration of critical process lines. Our professional installation and welding guarantee hygienic integrity, regulatory compliance, and maximum flow efficiency.",
+    alt : "Piping"
+  },
+   {
+    img : "ten" ,
+    title : "Conveyors & Handling Equipments" ,
+    description : "Custom systems for efficient material movement. Optimizes production flow, reduces handling time, and integrates smoothly into your processing lines.",
+    alt :"Conveyors & Handling Equipments"
+  },
+  {
+    img: "cooling" ,
+    title: "Cooling Towers" ,
+    description : " Provides reliable, cost-effective  industrial water cooling. Engineered for maximum heat  rejection, durability, and minimal operational maintenance requirements." ,
+    alt : "Cooling Towers"
+  },
+  {
+    img: "fire-fighting" ,
+    title : "Fire Fighting Systems" ,
+    description : " Comprehensive, compliant safety solutions. We install and commission full fire fighting systems, protecting critical assets and ensuring personnel safety standards." ,
+    alt: "Fire Fighting Systems"
+  },
+     {
+    img : "six" ,
+    title : "Lab Racks" ,
+    description : " Engineered stainless steel racks for sample and equipment storage. Provides durable, space-efficient, and easy-to-clean vertical solutions for demanding QC environments",
+    alt :"Lab Racks"
+  },
+   {
+    img : "three" ,
+    title : "Lab Cupboards" ,
+    description : "Purpose-built, hygienic storage for sensitive lab materials. Ensures compliance, organization, and a secure environment for reagents, samples, and essential lab tools.",
+    alt :"Lab Cupboards"
+  },
+   {
+    img: "trolley" ,
+    title : "Lab Table Trolley" ,
+    description : " Versatile, mobile stainless steel work surfaces. Designed for seamless movement of equipment and samples, enhancing flexibility and efficiency within the laboratory workspace." ,
+    alt: "Lab Table Trolley"
+  },
+    {
+    img : "nine" ,
+    title : "Lab Homogenizers" ,
+    description : "Achieves superior particle reduction and stable emulsions at the bench scale. Crucial for developing stable, high-quality products before scaling up production.",
+    alt :"Lab Homogenizers"
+  },
+    {
+    img : "seven" ,
+    title : "Lab Mixers" ,
+    description : "Essential for small-batch formulation and testing. Our mixers ensure precise, repeatable blending and dispersion, guaranteeing sample consistency for critical R&D work.",
+    alt :"Lab Mixers"
+  },
+
+]

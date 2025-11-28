@@ -1,4 +1,6 @@
-import type { ICards, ISolutions } from "../interfaces";
+import { Clock, Mail, Navigation, Phone } from "lucide-react";
+import type { ICards, IFooter, IPage, ISolutions } from "../interfaces";
+import { FacebookIcon, LinkedInIcon, WhatsappIcon } from "../Icons";
 
 export const Strenghts: ICards[] = [
   {
@@ -31,25 +33,25 @@ export const Products : ICards[] = [
   {
     img : "first-service",
     title : "Automation, Control & Power Panels" ,
-    description : " We deliver end-to-end customized automation solutions, integrating state- of-the-art PLCs and HMI/SCADA systems.",
+    description : "The operational center of your plant. We design and build robust panels for centralized power distribution, motor control, and reliable system monitoring",
     alt : "Automation,Control & Power Panels"
   },
   {
     img : "service two",
     title : "Reactors" ,
-    description : " We fabricate industrial reactors for thermal and pressure demands agitation and material feed.",
+    description : "Core to process safety and yield. We design and manufacture custom industrial reactors optimized for chemical and thermal efficiency across all key industry requirements.",
     alt : "Reactors"
   },
   {
     img : "prooooduct",
     title : " Piping" ,
-    description : "We design and manufacture Stainless steel piping for liquids and steel piping for heating systems (oil and steam).",
+    description : "Seamless integration of critical process lines. Our professional installation and welding guarantee hygienic integrity, regulatory compliance, and maximum flow efficiency.",
     alt : "Piping"
   },
   {
     img : "service four",
     title : "Fire Fighting Systems" ,
-    description : " We design, manufacture, install and commission complete fire fighting systems according to your requirements",
+    description : "Comprehensive, compliant safety solutions. We install and commission full fire fighting systems, protecting critical assets and ensuring personnel safety standards.",
     alt : "Fire Fighting Systems"
   }
 ]
@@ -106,16 +108,22 @@ export const Service : ICards[] = [
     alt : "Electrical Works"
   },
   {
-    img : "eight" ,
-    title : "Homogenizers" ,
-    description : "High-shear, high-pressure equipment for emulsion and dispersion. Delivers superior product texture, stability, and particle size control across sensitive formulations.",
-    alt :"Homogenizers"
-  },
-  {
     img: "customized",
     title : "Customized Solutions",
     description: "Engineering expertise focused on unique challenges. We design bespoke systems that perfectly bridge gaps where standard equipment fails to meet specific process needs.",
     alt: "Customized Solutions"
+  },
+   {
+    img: "fire-fighting" ,
+    title : "Fire Fighting Systems" ,
+    description : " Comprehensive, compliant safety solutions. We install and commission full fire fighting systems, protecting critical assets and ensuring personnel safety standards." ,
+    alt: "Fire Fighting Systems"
+  },
+  {
+    img : "service three" ,
+    title : "Stainless Steel Piping" ,
+    description : "Seamless integration of critical process lines. Our professional installation and welding guarantee hygienic integrity, regulatory compliance, and maximum flow efficiency.",
+    alt : "Piping"
   }
 ]
 
@@ -145,12 +153,6 @@ export const ProductsPage : ICards[] = [
     alt :"Heat Exchangers"
   },
    {
-    img : "service three" ,
-    title : "Stainless Steel Piping" ,
-    description : "Seamless integration of critical process lines. Our professional installation and welding guarantee hygienic integrity, regulatory compliance, and maximum flow efficiency.",
-    alt : "Piping"
-  },
-   {
     img : "ten" ,
     title : "Conveyors & Handling Equipments" ,
     description : "Custom systems for efficient material movement. Optimizes production flow, reduces handling time, and integrates smoothly into your processing lines.",
@@ -161,12 +163,6 @@ export const ProductsPage : ICards[] = [
     title: "Cooling Towers" ,
     description : " Provides reliable, cost-effective  industrial water cooling. Engineered for maximum heat  rejection, durability, and minimal operational maintenance requirements." ,
     alt : "Cooling Towers"
-  },
-  {
-    img: "fire-fighting" ,
-    title : "Fire Fighting Systems" ,
-    description : " Comprehensive, compliant safety solutions. We install and commission full fire fighting systems, protecting critical assets and ensuring personnel safety standards." ,
-    alt: "Fire Fighting Systems"
   },
      {
     img : "six" ,
@@ -198,5 +194,68 @@ export const ProductsPage : ICards[] = [
     description : "Essential for small-batch formulation and testing. Our mixers ensure precise, repeatable blending and dispersion, guaranteeing sample consistency for critical R&D work.",
     alt :"Lab Mixers"
   },
-
+   {
+    img : "eight" ,
+    title : "Homogenizers" ,
+    description : "High-shear, high-pressure equipment for emulsion and dispersion. Delivers superior product texture, stability, and particle size control across sensitive formulations.",
+    alt :"Homogenizers"
+  }
 ]
+
+export const FooterData : IFooter[] = [
+  {
+    icon : <Navigation />,
+    data : " Locations: 600, Saad Zaghloul Industrial Center, Obour, Qalyubia Governorate, Egypt"
+  },
+  {
+    icon : <Phone />,
+    data : "Call Us: +20 15 51289512"
+  },
+  {
+    icon : <Mail />,
+    data : "Mail Us At: info@alfamec-ia.com"
+  },
+  {
+    icon : <Clock />,
+    data : "Office Hours: Sat - Thurs: 8AM to 5PM"
+  },
+]
+
+export const SocialMedia : IFooter [] = [
+  {
+    icon : <LinkedInIcon aria-label="go to linkedin" />,
+    data : "http://linkedin.com/company/alfamec-integrated-engineering-solutions"
+  },
+  {
+    icon : <FacebookIcon aria-label="go to facebook"/>,
+    data : "https://www.facebook.com/alfamec.integrated.engineering.solutions"
+  },
+  {
+    icon : <WhatsappIcon aria-label="go to whatsapp" />,
+    data : "https://wa.me/message/PTQVP33NLJ5WA1"
+  }
+]
+
+export const Pages : IPage [] = [
+  {
+    title : "home",
+    to : "/"
+  },
+  {
+    title : "about",
+    to : "/about"
+  },
+  {
+    title : "services",
+    to : "/service"
+  },
+  {
+    title : "products",
+    to : "/product"
+  },
+  {
+    title : "contact",
+    to: "/contact"
+  }
+]
+

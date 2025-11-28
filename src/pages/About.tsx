@@ -1,7 +1,8 @@
-import { FaGreaterThan } from "react-icons/fa";
+
 import Heading from "../components/Heading";
 import { Solutions } from "../data";
 import { Link } from "react-router-dom";
+import { GreaterIcon } from "../Icons";
 
 const About = () => {
   const SolutionsCardRender = Solutions.map(({ img, paragraph }, idx) => (
@@ -17,7 +18,7 @@ const About = () => {
     <>
       <section className="h-[350PX] bg-cover bg-center bg-[url('/images/bg-2.jpg')] relative ">
         <div className="absolute bg-[#000000b3] inset-0"></div>
-        <div className="z-10 relative max-w-7xl mx-auto flex flex-col justify-between h-full py-5">
+        <div className="z-10 relative max-w-6xl  xl:max-w-7xl px-7 mx-auto flex flex-col justify-between h-full py-5">
           <div className="flex-grow flex justify-center items-center w-full">
             <h2 className="uppercase text-4xl tracking-wider text-[#55F229]  font-semibold">
               about
@@ -26,7 +27,7 @@ const About = () => {
           <div>
             <h5 className="flex items-center capitalize gap-2 text-white">
               <Link to={"/"}> home </Link>
-              <FaGreaterThan />
+              <GreaterIcon />
               <span className="text-[#55F229]">about</span>
             </h5>
           </div>

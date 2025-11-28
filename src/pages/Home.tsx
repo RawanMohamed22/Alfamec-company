@@ -1,11 +1,14 @@
 import { Link } from "react-router-dom";
 import { Products, Strenghts } from "../data";
+import Slider from "../components/Slider";
+
 
 const Home = () => {
+  
   const RenderCards = Strenghts.map(({ description, img, title ,alt}, idx) => (
     <div
       key={idx}
-      className="flex flex-col items-center space-y-3 p-9 bg-[#222] text-white hover:scale-110 transition-transform"
+      className="flex flex-col items-center space-y-3 p-9 bg-[#222] text-white hover:scale-110 hover:shadow-2xl hover:shadow-black transition-all"
     >
       <img src={`/images/${img}.png`} className="w-20" loading="lazy" alt={alt} />
       <div className="text-center space-y-3">
@@ -32,7 +35,10 @@ const Home = () => {
   return (
     <>
       {/* start section one */}
-      <section className="h-[570px] bg-cover bg-center bg-[url('/images/Welding.webp')]"></section>
+      {/* <section className="h-[600PX] bg-cover bg-center bg-[url('/images/slide1.webp')]">
+
+      </section> */}
+      <Slider/>
       {/* end section one */}
 
       {/* start section two */}
@@ -45,6 +51,7 @@ const Home = () => {
             src="/images/about-1.webp"
             className="lg:col-span-1"
             loading="lazy"
+            alt="about alfamec"
           />
           <div className="lg:col-span-2 space-y-6 xl:space-y-12">
             <p className="text-2xl text-[#393939] font-semibold">

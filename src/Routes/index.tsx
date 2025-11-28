@@ -3,22 +3,25 @@ import {
   createRoutesFromElements,
   Route,
 } from "react-router-dom";
-import Layout from "../pages/Layout";
-import Home from "../pages/Home";
-import About from "../pages/About";
-import Services from "../pages/services";
-import Product from "../pages/product";
-import Contact from "../pages/contact";
+import React from "react";
+// import Skeleton from "../components/Skeleton";
+
+const Home = React.lazy(() => import("../pages/Home"));
+const About = React.lazy(() => import("../pages/About"));
+const Services = React.lazy(() => import("../pages/services"));
+const Product = React.lazy(() => import("../pages/product"));
+const Contact = React.lazy(() => import("../pages/contact"));
+const Layout = React.lazy(() => import("../pages/Layout"));
 
 const Router = createBrowserRouter(
   createRoutesFromElements(
     <>
       <Route path="/" element={<Layout />}>
-        <Route index element={<Home />} />
-        <Route path="/about" element={<About/>} />
-        <Route path="/service" element={<Services/>} />
-        <Route path="/product" element={<Product/>} />
-        <Route path="/contact" element={<Contact/>} />
+          <Route index element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/service" element={<Services />} />
+          <Route path="/product" element={<Product />} />
+          <Route path="/contact" element={<Contact />} />
       </Route>
     </>
   )

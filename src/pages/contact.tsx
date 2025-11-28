@@ -1,14 +1,14 @@
 import { Mail, Phone } from "lucide-react";
 import Heading from "../components/Heading";
 import { Link } from "react-router-dom";
-import { FaFacebook, FaGreaterThan, FaLinkedin, FaWhatsapp } from "react-icons/fa";
+import { FacebookIcon, GreaterIcon, LinkedInIcon, WhatsappIcon } from "../Icons";
 
 const Contact = () => {
   return (
     <>
       <section className="h-[350PX] bg-cover bg-center bg-[url('/images/bg-3.jpg')] relative">
         <div className="absolute bg-[#000000b3] inset-0"></div>
-        <div className="z-10 relative max-w-7xl mx-auto flex flex-col justify-between h-full py-5">
+        <div className="z-10 relative max-w-6xl  xl:max-w-7xl px-7 mx-auto flex flex-col justify-between h-full py-5">
           <div className="flex-grow flex justify-center items-center w-full">
             <h2 className="uppercase text-4xl tracking-wider text-[#55F229]  font-semibold">
               contact
@@ -17,7 +17,7 @@ const Contact = () => {
           <div>
             <h5 className="flex items-center capitalize gap-2 text-white">
               <Link to={"/"}> home </Link>
-              <FaGreaterThan />
+              <GreaterIcon />
               <span className="text-[#55F229]">contact</span>
             </h5>
           </div>
@@ -54,20 +54,19 @@ const Contact = () => {
                   href="http://linkedin.com/company/alfamec-integrated-engineering-solutions"
                   className="hover:text-[#55F229] transition-colors"
                 >
-                  {" "}
-                  <FaLinkedin />
+                  <LinkedInIcon aria-label="go to linkedin" />
                 </a>
                 <a
                   href="https://www.facebook.com/alfamec.integrated.engineering.solutions"
                   className="hover:text-[#55F229] transition-colors"
                 >
-                  <FaFacebook />
+                  <FacebookIcon aria-label="go to facebook" />
                 </a>
                 <a
                   href="https://wa.me/message/PTQVP33NLJ5WA1"
                   className="hover:text-[#55F229] transition-colors"
                 >
-                  <FaWhatsapp />
+                  <WhatsappIcon aria-label="go to whatsapp" />
                 </a>
               </div>
             </div>

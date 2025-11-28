@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import Heading from "../components/Heading";
 import { Service } from "../data";
-import { FaGreaterThan } from "react-icons/fa";
+import { GreaterIcon } from "../Icons";
 
 const Services = () => {
   const ServicesRender = Service.map(({ description, img, title ,alt }, idx) => (
@@ -41,14 +41,14 @@ const Services = () => {
     <>
       <section className="h-[350PX] bg-cover bg-center bg-[url('/images/about-bg-2.jpg')] relative">
       <div className="absolute bg-[#000000b3] inset-0"></div>
-      <div className="z-10 relative max-w-7xl mx-auto flex flex-col justify-between h-full py-5">
+      <div className="z-10 relative max-w-6xl  xl:max-w-7xl px-7 mx-auto flex flex-col justify-between h-full py-5">
         <div className="flex-grow flex justify-center items-center w-full">
           <h2 className="uppercase text-4xl tracking-wider text-[#55F229]  font-semibold">services</h2>
         </div>
         <div>
           <h5 className="flex items-center capitalize gap-2 text-white">
             <Link to={"/"}> home </Link>
-            <FaGreaterThan /> 
+            <GreaterIcon/> 
             <span className="text-[#55F229]">services</span>
           </h5>
         </div>

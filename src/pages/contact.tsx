@@ -6,7 +6,7 @@ import { FacebookIcon, GreaterIcon, LinkedInIcon, WhatsappIcon } from "../Icons"
 const Contact = () => {
   return (
     <>
-      <section className="h-[350PX] bg-cover bg-center bg-[url('/images/bg-3.jpg')] relative">
+      <section className="h-[350PX]  bg-cover bg-center bg-[url('/images/bg-3.jpg')] relative">
         <div className="absolute bg-[#000000b3] inset-0"></div>
         <div className="z-10 relative max-w-6xl  xl:max-w-7xl px-7 mx-auto flex flex-col justify-between h-full py-5">
           <div className="flex-grow flex justify-center items-center w-full">
@@ -23,7 +23,7 @@ const Contact = () => {
           </div>
         </div>
       </section>
-      <section className="py-10">
+      <section className="py-10 px-4">
         <Heading classname="font-bold capitalize">contact details</Heading>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:max-w-6xl sm:px-5 2xl:max-w-7xl mx-auto gap-4 py-8">
           <div className="bg-[#f8f9fa] space-y-5 p-3">

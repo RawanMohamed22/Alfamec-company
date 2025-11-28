@@ -36,7 +36,7 @@ const About = () => {
 
       <section className="py-11 ">
         <Heading classname="font-semibold capitalize">about <span className="uppercase">alfamec</span></Heading>
-        <div className="py-8 max-w-xl md:max-w-4xl lg:max-w-6xl xl:max-w-7xl mx-auto space-y-4 text-[#848484] text-lg">
+        <div className="py-8 px-6 max-w-xl md:max-w-4xl lg:max-w-6xl xl:max-w-7xl mx-auto space-y-4 text-[#848484] text-lg">
           <p>
             We are a full service engineering and manufacturing firm specialized
             in process equipment and facility infrastructure. Our expertise
@@ -66,7 +66,7 @@ const About = () => {
         </div>
       </section>
 
-      <section className="py-11 bg-[#f8f9fa]">
+      <section className="py-11 bg-[#f8f9fa] px-6">
         <Heading classname="font-semibold capitalize">
           <span className="uppercase">alfamec</span> provides customized
           solutions for:

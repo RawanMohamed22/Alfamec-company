@@ -15,7 +15,8 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="flex justify-between items-center lg:px-7 xl:px-20 mx-auto bg-[#FFFFFF] py-2 sticky top-0 left-0 right-0 shadow-md shadow-black/25 z-20">
+      <nav className=" lg:px-7 xl:px-20 mx-auto bg-[#FFFFFF] py-2 sticky top-0 left-0 right-0 shadow-md shadow-black/25 z-20">
+      <div className="flex justify-between items-center">
         <div className="flex items-center">
           <img src={companyLogo} className="w-36" alt="Alfamec company logo" />
           <h2 className="text-xl font-bold text-[#03318C] uppercase">
@@ -33,7 +34,7 @@ const Navbar = () => {
         >
           <MenuIcon />
         </button>
-      </nav>
+      </div>
       <ul
         className={` lg:hidden bg-white text-[#03318C] font-medium text-lg capitalize px-5 space-y-2  transition-all duration-300 ease-in-out ${
           open
@@ -43,6 +44,7 @@ const Navbar = () => {
       >
         {PagesRender}
       </ul>
+      </nav>
     </>
   );
 };

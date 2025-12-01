@@ -4,7 +4,6 @@ import {
   Route,
 } from "react-router-dom";
 import React from "react";
-// import Skeleton from "../components/Skeleton";
 
 const Home = React.lazy(() => import("../pages/Home"));
 const About = React.lazy(() => import("../pages/About"));

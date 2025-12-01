@@ -1,11 +1,16 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import companyLogo from "../assets/logo2.jpg";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Pages } from "../data";
 import { MenuIcon } from "../Icons";
 
 const Navbar = () => {
   const [open, setIsOpen] = useState(false);
+  const {pathname} = useLocation()
+
+  useEffect(() => {
+    setIsOpen(false)
+  },[pathname])
 
   const PagesRender = Pages.map(({title ,to} , idx) => (
     <li key={idx} className="hover:text-[#55F229] transition py-1 lg:py-0">

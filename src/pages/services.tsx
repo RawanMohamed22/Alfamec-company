@@ -4,7 +4,8 @@ import { Service } from "../data";
 import { GreaterIcon } from "../Icons";
 
 const Services = () => {
-  const ServicesRender = Service.map(({ description, img, title ,alt }, idx) => (
+
+  const ServicesRender = Service.map(({ description, img, title ,alt}, idx) => (
     <section
       key={idx}
       className={`${idx % 2 ? "bg-transparent" : "bg-[#f2f4f7]"} py-3`}

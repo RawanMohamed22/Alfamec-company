@@ -4,7 +4,7 @@ import { GreaterIcon } from "../Icons";
 
 const Product = () => {
   const ProductsRender = ProductsPage.map(
-    ({ description, img, title,alt }, idx) => (
+    ({ description, img, title,alt}, idx) => (
       <section
         key={idx}
         className={`${idx % 2 ? "bg-transparent" : "bg-[#f2f4f7]"} py-5`}

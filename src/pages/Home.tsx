@@ -7,7 +7,7 @@ const Home = () => {
   
   const RenderCards = Strenghts.map(({ description, img, title ,alt}, idx) => (
     <div
-      key={idx}
+    key={idx} 
       className="flex flex-col items-center space-y-3 p-9 bg-[#222] text-white hover:scale-110 hover:shadow-2xl hover:shadow-black transition-all"
     >
       <img src={`/images/${img}.png`} className="w-20" loading="lazy" alt={alt} />
@@ -70,7 +70,7 @@ const Home = () => {
       {/* end section two */}
 
       {/* start section three */}
-      <section className="py-12 bg-cover bg-center bg-[url('/images/section3-bg.jpg')]">
+      <section className="py-12 px-6 bg-cover bg-center bg-[url('/images/section3-bg.jpg')]">
         <h2 className="text-center text-[#55F229] capitalize text-4xl font-semibold">
           our strength
         </h2>

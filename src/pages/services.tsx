@@ -2,13 +2,24 @@ import { Link } from "react-router-dom";
 import Heading from "../components/Heading";
 import { Service } from "../data";
 import { GreaterIcon } from "../Icons";
+import { useEffect } from "react";
 
 const Services = () => {
 
-  const ServicesRender = Service.map(({ description, img, title ,alt}, idx) => (
+  useEffect(() => {
+    window.scrollTo({top: 0})
+    const id = window.location.hash.replace("#" , "")
+    if (id){
+      const el = document.getElementById(id)
+      el?.scrollIntoView({behavior : "smooth"})
+    }
+  })
+
+  const ServicesRender = Service.map(({ description, img, title ,alt , id}, idx) => (
     <section
       key={idx}
       className={`${idx % 2 ? "bg-transparent" : "bg-[#f2f4f7]"} py-3`}
+      id={id}
     >
       <Heading classname="font-semibold capitalize">{title}</Heading>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 py-9 items-center px-9 xl:max-w-7xl mx-auto">

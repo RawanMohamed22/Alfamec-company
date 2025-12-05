@@ -18,8 +18,7 @@ const Home = () => {
     </div>
   ));
 
-  const RenderProducts = Products.map(({description ,img ,title ,alt,to,path} ,idx) => (
-    <Link to={`/${path}#${to}`}>
+  const RenderProducts = Products.map(({description ,img ,title ,alt} ,idx) => (
     <div key={idx} className="flex flex-col shadow-md rounded-lg  ">
       <h2 className="text-[#03318C] py-5 px-2  text-lg font-semibold relative before:content-[''] before:absolute before:border-2 before:left-0 before:top-3 before:border-[#55F229] before:h-10 before:rounded-md">
         {title}
@@ -32,7 +31,6 @@ const Home = () => {
       />
       <p className="text-sm text-[#848484] p-4">{description}</p>
     </div>
-    </Link>
   ));
   return (
     <>

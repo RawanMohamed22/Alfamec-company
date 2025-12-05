@@ -5,9 +5,6 @@ export interface ICards{
     title : string,
     description : string
     alt : string
-    id? : string
-    to? : string
-    path ? :String
 }
 
 export interface ISolutions{

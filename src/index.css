@@ -2,3 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
+nav .active{
+    color: #55F229;
+}

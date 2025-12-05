@@ -13,6 +13,7 @@ const Footer = () => {
       href={data}
       className="hover:text-[#55F229] transition-colors"
       key={idx}
+      target="_blank"
     >
       {icon}
     </a>

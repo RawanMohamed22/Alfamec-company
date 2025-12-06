@@ -1,14 +1,26 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import Heading from "../components/Heading";
 import { Service } from "../data";
 import { GreaterIcon } from "../Icons";
+import { useEffect } from "react";
 const Services = () => {
+  const location = useLocation();
+
+      useEffect(() => {
+        if (location.hash) {
+          const element = document.querySelector(location.hash);
+          if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+          }
+        }
+      }, [location.hash]);
 
 
-  const ServicesRender = Service.map(({ description, img, title ,alt}, idx) => (
+  const ServicesRender = Service.map(({ description, img, title ,alt,id}, idx) => (
     <section
       key={idx}
       className={`${idx % 2 ? "bg-transparent" : "bg-[#f2f4f7]"} py-3`}
+      id={id}
     >
       <Heading classname="font-semibold capitalize">{title}</Heading>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 py-9 items-center px-9 xl:max-w-7xl mx-auto">

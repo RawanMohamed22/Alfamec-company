@@ -14,7 +14,9 @@ const Slider = () => {
 
 
   const SlidesRender = Slides.map((img, idx) => (
-    <img key={idx} src={`/images/${img}.webp`} alt="bg-image"  />
+    <div key={idx} className="w-full h-full flex-shrink-0">
+      <img  src={`/images/${img}.webp`} alt="bg-image" className="w-full h-full object-cover"  />
+    </div>
   ));
   return (
     <>

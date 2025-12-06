@@ -35,24 +35,32 @@ export const Products : ICards[] = [
     title : "Automation, Control & Power Panels" ,
     description : "The operational center of your plant. We design and build robust panels for centralized power distribution, motor control, and reliable system monitoring",
     alt : "Automation,Control & Power Panels",
+    to : "powerpanels",
+    path : "/service"
   },
   {
     img : "service two",
     title : "Reactors" ,
     description : "Core to process safety and yield. We design and manufacture custom industrial reactors optimized for chemical and thermal efficiency across all key industry requirements.",
     alt : "Reactors",
+    to : "reactors",
+    path : "/product"
   },
   {
     img : "prooooduct",
     title : " Piping" ,
     description : "Seamless integration of critical process lines. Our professional installation and welding guarantee hygienic integrity, regulatory compliance, and maximum flow efficiency.",
     alt : "Piping",
+    to : "piping",
+    path : "/service"
   },
   {
     img : "service four",
     title : "Fire Fighting Systems" ,
     description : "Comprehensive, compliant safety solutions. We install and commission full fire fighting systems, protecting critical assets and ensuring personnel safety standards.",
     alt : "Fire Fighting Systems",
+    to: "firefighting",
+    path : "/service"
   }
 ]
 
@@ -100,6 +108,7 @@ export const Service : ICards[] = [
     title : "Control & Power Panels" ,
     description : "The operational center of your plant. We design and build robust panels for centralized power distribution, motor control, and reliable system monitoring",
     alt : "Control & Power Panels",
+    id: "powerpanels"
   },
   {
     img : "product7" ,
@@ -118,12 +127,14 @@ export const Service : ICards[] = [
     title : "Fire Fighting Systems" ,
     description : " Comprehensive, compliant safety solutions. We install and commission full fire fighting systems, protecting critical assets and ensuring personnel safety standards." ,
     alt: "Fire Fighting Systems",
+    id : "firefighting"
   },
   {
     img : "service three" ,
     title : "Stainless Steel Piping" ,
     description : "Seamless integration of critical process lines. Our professional installation and welding guarantee hygienic integrity, regulatory compliance, and maximum flow efficiency.",
     alt : "Piping",
+    id: "piping"
   }
 ]
 
@@ -145,6 +156,7 @@ export const ProductsPage : ICards[] = [
     title : "Reactors" ,
     description : " Core to process safety and yield. We design and manufacture custom industrial reactors optimized for chemical and thermal efficiency across all key industry requirements. ",
     alt :"Reactors",
+    id : "reactors"
   },
    {
     img : "four" ,

@@ -1,13 +1,26 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { ProductsPage } from "../data";
 import { GreaterIcon } from "../Icons";
+import { useEffect } from "react";
 
 const Product = () => {
+  const location = useLocation();
+
+      useEffect(() => {
+        if (location.hash) {
+          const element = document.querySelector(location.hash);
+          if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+          }
+        }
+      }, [location.hash]);
+
   const ProductsRender = ProductsPage.map(
-    ({ description, img, title,alt}, idx) => (
+    ({ description, img, title,alt,id}, idx) => (
       <section
         key={idx}
         className={`${idx % 2 ? "bg-transparent" : "bg-[#f2f4f7]"} py-5`}
+        id={id}
       >
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 py-9 items-center px-9 xl:max-w-7xl mx-auto">
           {idx % 2 ? (

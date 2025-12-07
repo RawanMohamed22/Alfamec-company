@@ -53,18 +53,21 @@ const Contact = () => {
                 <a
                   href="http://linkedin.com/company/alfamec-integrated-engineering-solutions"
                   className="hover:text-[#55F229] transition-colors"
+                  target="_blank"
                 >
                   <LinkedInIcon aria-label="go to linkedin" />
                 </a>
                 <a
                   href="https://www.facebook.com/alfamec.integrated.engineering.solutions"
                   className="hover:text-[#55F229] transition-colors"
+                  target="_blank"
                 >
                   <FacebookIcon aria-label="go to facebook" />
                 </a>
                 <a
                   href="https://wa.me/message/PTQVP33NLJ5WA1"
                   className="hover:text-[#55F229] transition-colors"
+                  target="_blank"
                 >
                   <WhatsappIcon aria-label="go to whatsapp" />
                 </a>

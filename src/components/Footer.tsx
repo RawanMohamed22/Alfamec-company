@@ -3,7 +3,7 @@ import { FooterData, SocialMedia } from "../data";
 const Footer = () => {
   const FooterDataRender = FooterData.map(({ data, icon, href }, idx) => (
       <li className=" text-white" key={idx}>
-        <a href={href} target="_blank" className="flex items-center gap-4">
+        <a href={href}  className="flex items-center gap-4">
         <div className="text-2xl">{icon}</div>
         <span className="text-lg">{data}</span>
         </a>

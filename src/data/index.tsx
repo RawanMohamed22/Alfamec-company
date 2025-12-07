@@ -217,15 +217,18 @@ export const ProductsPage : ICards[] = [
 export const FooterData : IFooter[] = [
   {
     icon : <Navigation />,
-    data : " Locations: 600, Saad Zaghloul Industrial Center, Obour, Qalyubia Governorate, Egypt"
+    data : " Locations: 600, Saad Zaghloul Industrial Center, Obour, Qalyubia Governorate, Egypt",
+    href : "https://maps.app.goo.gl/7TdD8GSZLwxTGzTG9"
   },
   {
     icon : <Phone />,
-    data : "Call Us: +20 15 51289512"
+    data : "Call Us: +20 15 51289512",
+    href : "tel:+201551289512"
   },
   {
     icon : <Mail />,
-    data : "Mail Us At: info@alfamec-ia.com"
+    data : "Mail Us At: info@alfamec-ia.com",
+    href : "mailto:info@alfamec-ia.com"
   },
   {
     icon : <Clock />,

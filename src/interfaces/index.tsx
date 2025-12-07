@@ -18,6 +18,7 @@ export interface ISolutions{
 export interface IFooter {
     icon : ReactNode
     data : string
+    href? : string
 }
 
 export interface IPage {

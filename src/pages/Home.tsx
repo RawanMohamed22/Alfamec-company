@@ -45,9 +45,9 @@ const Home = () => {
 
       {/* start section two */}
       <section className="bg-cover bg-center bg-[url('/images/about-bg.jpg')]">
-        <h2 className="relative uppercase text-center py-8 text-4xl text-[#03318C] font-bold after:content-[''] after:absolute after:right-1/2  after:bottom-0 after:border-2 after:border-[#55F229] after:w-24 after:rounded-md after:translate-x-1/2">
+        <h1 className="relative uppercase text-center py-8 text-4xl text-[#03318C] font-bold after:content-[''] after:absolute after:right-1/2  after:bottom-0 after:border-2 after:border-[#55F229] after:w-24 after:rounded-md after:translate-x-1/2">
           about alfamec
-        </h2>
+        </h1>
         <div className=" md:max-w-4xl px-6 lg:px-0 lg:max-w-5xl xl:max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-11 py-12 items-center">
           <img
             src="/images/about-1.webp"
